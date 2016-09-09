@@ -1,6 +1,6 @@
 //Creado por: Nelson Gatica | Fecha: 2016-09-01
 //Modificado por: Nelson Gatica | Fecha: 2016-09-09
-
+//Este es el codigo de la rama de prueba 2
 #include <DS1337.h>
 #include <Wire.h>
 
@@ -8,6 +8,7 @@ DS1337 RTC;
 
 void setup(){                
   Serial.begin(57600);
+  Serial.pritnln("se envia un mensaje de prueba XYZ");
   RTC.start(); // ensure RTC oscillator is running, if not already
 }
 
