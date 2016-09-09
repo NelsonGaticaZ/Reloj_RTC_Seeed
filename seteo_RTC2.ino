@@ -1,13 +1,13 @@
 //Creado por: Nelson Gatica | Fecha: 2016-09-01
 //Modificado por: Nelson Gatica | Fecha: 2016-09-09
-
+//Este es el código de la rama de prueba1
 #include <DS1337.h>
 #include <Wire.h>
 
 DS1337 RTC;
 
 void setup(){                
-  Serial.begin(57600);
+  Serial.begin(9600);//Se cambio la velocidad serial
   RTC.start(); // ensure RTC oscillator is running, if not already
 }
 
