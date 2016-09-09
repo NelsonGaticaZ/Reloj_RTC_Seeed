@@ -1,3 +1,6 @@
+//Creado por: Nelson Gatica | Fecha: 2016-09-01
+//Modificado por: Nelson Gatica | Fecha: 2016-09-09
+
 #include <DS1337.h>
 #include <Wire.h>
 
