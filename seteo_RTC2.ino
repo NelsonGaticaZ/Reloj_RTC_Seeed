@@ -36,17 +36,18 @@ void test_basic()
   printTime(0);//Si "0" Imprime la fecha, Si "1" Imprime solo la hora
     
     //Seteo Usando hora y fecha  
-    RTC.setSeconds(01);
+    /*RTC.setSeconds(01);
     RTC.setMinutes(21);
     RTC.setHours(15);
     RTC.setDays(29);
     RTC.setMonths(8);
     RTC.setYears(2016); // 2-digit or 4-digit years are supported
-    RTC.writeTime();
+    RTC.writeTime();*/
     delay(500);  
      
-    //Serial.println("Setting time using epoch seconds:");
-    //RTC.writeTime(1471875228);
+    Serial.println("Setting time using epoch seconds:");
+    unsigned long valor=1473778620+60;
+    RTC.writeTime(valor);
     delay(500);  
     RTC.readTime();    
     Serial.print("The current time is (ahora)");
